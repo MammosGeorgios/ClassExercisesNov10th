@@ -14,9 +14,13 @@ namespace ClassExercisesNov10th
 
             PrintHome print = MethodA;
             print(home);
-            
-          
-            
+
+            PrintHome del;
+
+            del = (Home home2) => Console.WriteLine(home2.Address +"-" + home2.Name);
+
+            del(home);
+
         }
 
         public delegate void PrintHome(Home home);
